@@ -45,6 +45,8 @@ class AppKnox(JobExp):
         - Improved the existing API Scanner by adding SqlMap as a API Scanner
         - Restructured the existing Team Structure, Included Django Guardian for Object level permission
         - Restructured backend CRM for enterprise deployment
+        - Integrated Zapier webhooks for automations works
+        - Created Slack notifications for user and user scan flow
         """
     ]
 
