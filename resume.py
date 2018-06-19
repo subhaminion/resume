@@ -114,6 +114,7 @@ class Education(object):
 
 # Education
 
+
 class Bsc(Education):
     name = "Malda College"
     location = "Malda, India"
