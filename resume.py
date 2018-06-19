@@ -113,17 +113,6 @@ class Education(object):
         )
 
 # Education
-class Master(Education):
-    name = "St. Xavier's College"
-    location = "Kolkata, India"
-    course = "Masters in Computer Science"
-    started = datetime(2016, 8, 1)
-    left = datetime(2016, 9, 1)
-    description = [
-        """
-        Dropped Out
-        """,
-    ]
 
 class Bsc(Education):
     name = "Malda College"
