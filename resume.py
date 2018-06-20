@@ -3,7 +3,7 @@ from datetime import datetime
 
 
 basicInfo = {
-    "name": "\t\tSubham Bhattacharjee",
+    "name": "\t\tSubham Bhattacharjee", # Hack for tab :p
     "email": "\tsubham.bhattacharjee1@gmail.com",
     "phone": "\t+91-9046789016",
     "github": "\thttps://github.com/subhaminion",
