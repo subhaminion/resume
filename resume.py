@@ -143,7 +143,7 @@ if __name__ == "__main__":
         print(exp)
 
     print("Education:")
-    eduction = [Master(), Bsc()]
+    eduction = [Bsc()]
     for edu in eduction:
         print(edu)
 
