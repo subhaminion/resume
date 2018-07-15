@@ -30,6 +30,17 @@ class JobExp(object):
             "=" * 20
         )
 
+class Senseforth(JobExp):
+    company = "Senseforth.AI"
+    location = "Bangalore, India"
+    title = "Full Stack Software Engineer"
+    started = datetime(2018, 11, 1)
+    left = "PRESENT"
+    description = [
+        """
+        - Working on Custom Chatbot creation platform called A.Ware.
+        """
+    ]
 
 # Experience
 class AppKnox(JobExp):
@@ -37,7 +48,7 @@ class AppKnox(JobExp):
     location = "Bangalore, India"
     title = "Software Engineer"
     started = datetime(2017, 11, 1)
-    left = "Current"
+    left = datetime(2018, 11, 1)
     description = [
         """
         - Maintaining the Backend part of the Scanners
@@ -50,13 +61,12 @@ class AppKnox(JobExp):
         """
     ]
 
-
-class Freelancer(JobExp):
-    company = "Freelance Web Developer"
-    location = "Bangalore, India"
-    title = "Freelance Web Developer"
-    started = datetime(2017, 5, 1)
-    left = "Current"
+class DreamzTech(JobExp):
+    company = "DreamzTech Solutions Pvt. Ltd"
+    location = "Kolkata, India"
+    title = "Web Application Developer"
+    started = datetime(2016, 8, 1)
+    left = datetime(2017, 10, 1)
     description = [
         """
         - Enhancement of products based on client need by performing business process gap analysis
@@ -66,36 +76,6 @@ class Freelancer(JobExp):
         - Requirement Analysis for various clients and showcasing various aspects of Data Quality Suite
         - Development of application in Python for verifying Contact Data using Google APIs
         - Data formatting and cleansing using various Python libraries
-        """
-    ]
-
-
-class Rplanx(JobExp):
-    company = "Rplanx Technology Pvt. Ltd"
-    location = "Kolkata, India"
-    title = "Web Application Developer"
-    started = datetime(2016, 12, 1)
-    left = datetime(2017, 5, 1)
-    description = [
-        """
-        Working closely with client and coordinating with project manager to deliver product within stipulated time.
-        Understanding clients requirement and implementing them with creativity.
-        Collaborating with designer to bring out the best outcome.
-        Worked on several projects from Front End development to Backend.
-        As a startup I've also provided some of the major decisions in the project management.
-        """
-    ]
-
-class DreamzTech(JobExp):
-    company = "DreamzTech Solutions Pvt. Ltd"
-    location = "Kolkata, India"
-    title = "Web Application Developer"
-    started = datetime(2016, 8, 1)
-    left = datetime(2016, 11, 1)
-    description = [
-        """
-        - Develop and Design a website from scratch
-        - Collaborating with Team Leaders to bring out perfect outcome
         """
     ]
 
@@ -135,7 +115,7 @@ Project = namedtuple("Project", "name description")
 
 
 if __name__ == "__main__":
-    experience = [AppKnox(), Freelancer(), Rplanx(), DreamzTech()]
+    experience = [Senseforth(), AppKnox(), DreamzTech()]
     initInitials()
 
     print("Experience:")
